@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myself Introduce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2196F3;
+            --gradient-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--gradient-bg);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-picture {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            display: block;
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .info-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 12px rgba(33,150,243,0.2);
+        }
+
+        .icon {
+            font-size: 1.2em;
+            margin-right: 12px;
+            width: 28px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* 新增电话样式 */
+        .contact-group {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        /* 特殊符号样式 */
+        .symbol-check { 
+            color: #4CAF50;
+            margin-left: 8px;
+        }
+        .symbol-fries {
+            font-size: 1.4em;
+            margin-right: 10px;
+        }
+
+        /* 复杂信息区块 */
+        .detail-section {
+            padding: 1.5rem;
+            background: #fafbfc;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        /* 各种 div 块的颜色 */
+        .basic-info {
+            background-color: #e3f2fd;
+        }
+
+        .major {
+            background-color: #fce4ec;
+        }
+
+        .key-info {
+            background-color: #fff3e0;
+        }
+
+        .skills {
+            background-color: #e8f5e9;
+        }
+
+        .strengths-hobbies {
+            background-color: #ffe0b2;
+        }
+
+        .projects {
+            background-color: #ede7f6;
+        }
+
+        .self-assessment {
+            background-color: #f3e5f5;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                grid-template-columns: 1fr;
+            }
+            .contact-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 头像 -->
+        <img src="sr.jpg" alt="Profile Picture" class="profile-picture">
+
+        <!-- 基础信息 -->
+        <div class="section basic-info">
+            <div class="info-item">
+                <i class="fas fa-user icon"></i>
+                <span>姓名：李顺新</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-mars icon"></i>
+                <span>性别：男</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-birthday-cake icon"></i>
+                <span>年龄：20岁</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <span>籍贯：黑龙江 <span class="symbol-check">✓</span></span>
+            </div>
+            <div class="contact-group">
+                <div class="info-item">
+                    <i class="fas fa-phone icon"></i>
+                    <span>电话：131-XXXX-5645</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope icon"></i>
+                    <span>邮箱：5645@example.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 专业 -->
+        <div class="section major">
+            <div class="info-item">
+                <i class="fas fa-book-reader icon"></i>
+                <span>专业：软件工程</span>
+            </div>
+        </div>
+
+        <!-- 关键信息 -->
+        <div class="section key-info">
+            <div class="info-item">
+                <i class="fas fa-university icon"></i>
+                <span>学历：本科</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-heartbeat icon"></i>
+                <span>健康状态：良好</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-rings-wedding icon"></i>
+                <span>婚姻状况：未婚</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-briefcase icon"></i>
+                <span>求职意向：后端开发工程师</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-building icon"></i>
+                <span>毕业院校：烟台理工学院信息工程学院</span>
+            </div>
+        </div>
+
+        <!-- 技能证书 -->
+        <div class="detail-section skills">
+            <h3><i class="fas fa-certificate"></i> 技术能力</h3>
+            <div class="section">
+                <div class="info-item">
+                    <i class="fab fa-java icon"></i>
+                    <span>Java编程</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-laptop-code icon"></i>
+                    <span>Web网页制作</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-database icon"></i>
+                    <span>MySQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 个人特长与爱好 -->
+        <div class="detail-section strengths-hobbies">
+            <h3><i class="fas fa-star icon"></i> 个人特长与爱好</h3>
+            <div class="section">
+                <div class="info-item">
+                    <i class="fas fa-code icon"></i>
+                    <span>熟练掌握多种编程语言</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-running icon"></i>
+                    <span>热爱运动，尤其是长跑和健身</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-camera-retro icon"></i>
+                    <span>摄影爱好者，擅长风景拍摄</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经历 -->
+        <div class="detail-section projects">
+            <h3><i class="fas fa-code-branch icon"></i> 项目经历</h3>
+            <div class="info-item">
+                <i class="fas fa-bomb icon"></i>
+                <div>
+                    <strong>扫雷游戏</strong>
+                    <p>使用Java实现的经典扫雷游戏，包含单人模式和多人对战模式...</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-stethoscope icon"></i>
+                <div>
+                    <strong>健康管理系统</strong>
+                    <p>基于Web的健康管理平台，支持用户记录健康数据和查看分析报告...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 自我评价 -->
+        <div class="detail-section self-assessment">
+            <h3><i class="fas fa-comment-alt icon"></i> 自我评价</h3>
+            <div class="section">
+                <div class="info-item">
+                    <i class="fas fa-quote-left icon"></i>
+                    <span>作为一名软件工程专业大二学生，我始终保持对编程与算法的热爱，
+                    已系统学习《数据结构》《操作系统》《数据库原理》等核心课程，GPA排名专业前10%。
+                    熟练掌握Java/Python语言，能独立完成中小型项目开发，如基于Spring Boot的学生选课系统、使用Python爬虫实现的疫情数据可视化平台。
+                    积极参与学科竞赛，曾获校级程序设计竞赛二等奖，目前正备战蓝桥杯全国赛。担任学院科技创新社团技术部部长，组织过3次技术分享会，
+                    主导开发了社团招新小程序。熟悉Git版本控制与Linux基础操作，具有扎实的代码调试能力和文档撰写习惯。
+                    课外时间，我坚持通过LeetCode平台刷题（已解决200+算法问题），
+                    并在CSDN博客记录技术学习笔记（累计发布30篇原创文章）。目前正在自学机器学习基础，
+                    完成吴恩达《机器学习》课程并通过Kaggle入门竞赛实践。未来计划深入计算机视觉方向研究，
+                    争取发表学术论文；长期希望成为全栈工程师，参与具有社会价值的软件开发项目
+                    。我的座右铭是："用代码解决现实问题，用技术推动社会进步</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
